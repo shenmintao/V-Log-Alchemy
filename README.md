@@ -31,7 +31,7 @@
 
 ### 2. Leica (L-Log)
 *   **Leica Classic**: 德味厚重，高对比度，深沉的暗部。
-*   **Leica Vivid**: 更鲜艳生动，适合风光。
+*   **Leica Natural**: 更鲜艳生动，适合风光。
 
 ### 3. Coming Soon...
 *   **ARRI Alexa (K1S1)**: 电影工业标准。
