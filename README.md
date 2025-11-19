@@ -43,7 +43,7 @@
 *   **`FLog2C_to_Velvia_VLog.cube`**
     *   **风格**: Velvia (鲜艳)。
     *   **特点**: 极高饱和度，风景专用。
-*   **`FLog2C_to_ASTIA_33gird_VLog.cube`**
+*   **`FLog2C_to_ASTIA_VLog.cube`**
     *   **风格**: Astia (柔和)。
     *   **特点**: 柔和的肤色表现，适合人像。
 *   **`FLog2C_to_ETERNA_VLog.cube`**
@@ -78,6 +78,36 @@
 *   **`L-Log_to_Natural_VLog.cube`**
     *   **风格**: Leica Natural (自然)。
     *   **特点**: 相比 Classic 更加现代和中性。保留了徕卡的高光滚降特性，但暗部细节更多，对比度更温和，色彩过渡非常平滑“高级”，适合时尚、人像或日常记录。
+
+---
+
+### 🎬 ARRI (LogC Core)
+*基于 ARRI Alexa 电影机的色彩科学，提供行业标准的电影感。*
+
+*   **`ARRI_LogC2Video_Classic709_VLog.cube`**
+    *   **风格**: ARRI Classic 709。
+    *   **特点**: 经典的 ARRI Rec.709 外观，被无数电影和电视剧使用。色彩真实，肤色表现出色，高光过渡自然。
+
+---
+
+### 🎞️ Film Emulation (Cineon Core)
+*基于柯达 Cineon 扫描系统，模拟经典电影胶片的色彩。*
+
+*   **`Cineon_to_Fuji_3513DI_D65_VLog.cube`**
+    *   **风格**: Fuji 3513DI Print Film。
+    *   **特点**: 模拟富士电影发行拷贝的色彩，具有标志性的青色和柔和的对比度。
+*   **`Cineon_to_Kodak_2383_D65_VLog.cube`**
+    *   **风格**: Kodak 2383 Print Film。
+    *   **特点**: 模拟柯达电影发行拷贝的色彩，是好莱坞大片的标准外观，色彩温暖，对比度较高。
+
+---
+
+### 🎥 RED Digital Cinema (RED IPP2 Core)
+*基于 RED 数字电影机的 IPP2 图像处理流程。*
+
+*   **`REC709_MEDIUM_CONTRAST_Soft_VLog.cube`**
+    *   **风格**: RED IPP2 Medium Contrast / Soft Highlight。
+    *   **特点**: RED 官方 Rec.709 转换之一，提供中等对比度和柔和的高光滚降，适合各种场景。
 
 ---
 
