@@ -21,21 +21,63 @@
 
 ---
 
-## 📦 包含的风格 (Included Looks)
+## 📂 文件列表与风格说明 (LUT Pack Content)
 
-### 1. FUJIFILM GFX Series (Based on F-Log2C)
-利用富士中画幅 GFX 系列的色彩科学。
-*   **Nostalgic Neg (怀旧负片)**: 温暖的高光，青色的阴影，极具辨识度。
-*   **Classic Chrome (经典正片)**: 低饱和，强对比，纪实风格。
-*   **Reala Ace**: 富士最新的色彩，色彩还原精准且硬朗。
+本仓库提供的 LUT 专为 **Panasonic V-Log / V-Gamut** 输入设计。
 
-### 2. Leica (L-Log)
-*   **Leica Classic**: 德味厚重，高对比度，深沉的暗部。
-*   **Leica Natural**: 更鲜艳生动，适合风光。
+### 🗻 Fujifilm GFX Series (F-Log2C Core)
+*基于富士中画幅色彩科学，高像素机型（如 S1R II）的绝配。*
 
-### 3. Coming Soon...
-*   **ARRI Alexa (K1S1)**: 电影工业标准。
-*   **Kodak 2383**: 胶片印片模拟。
+*   **`FLog2C_to_REALA-ACE_VLog.cube`**
+    *   **风格**: Reala Ace (GFX100 II 首发)。
+    *   **特点**: 色彩还原极其精准，硬朗且通透，非常适合风景、建筑和高解析力拍摄。
+*   **`FLog2C_to_CLASSIC-CHROME_VLog.cube`**
+    *   **风格**: Classic Chrome (经典正片)。
+    *   **特点**: 低饱和度，强对比度，模仿老式纪实杂志风格。
+*   **`FLog2C_to_CLASSIC-Neg._VLog.cube`**
+    *   **风格**: Classic Neg (经典负片)。
+    *   **特点**: 街拍神级色彩，高对比，红橘色偏暖，强调硬调。
+*   **`FLog2C_to_PROVIA_VLog.cube`**
+    *   **风格**: Provia (标准)。
+    *   **特点**: 标准、万能、肤色自然。
+*   **`FLog2C_to_Velvia_VLog.cube`**
+    *   **风格**: Velvia (鲜艳)。
+    *   **特点**: 极高饱和度，风景专用。
+*   **`FLog2C_to_ASTIA_33gird_VLog.cube`**
+    *   **风格**: Astia (柔和)。
+    *   **特点**: 柔和的肤色表现，适合人像。
+*   **`FLog2C_to_ETERNA_VLog.cube`**
+    *   **风格**: Eterna (电影)。
+    *   **特点**: 超低对比度，柔和的高光滚降，适合视频基底。
+*   **`FLog2C_to_ETERNA-BB_VLog.cube`**
+    *   **风格**: Eterna Bleach Bypass (跳漂)。
+    *   **特点**: 低饱和，极高对比，冷峻金属感。
+*   **`FLog2C_to_PRO-Neg.Std_VLog.cube`**
+    *   **风格**: Pro Neg. Std。
+    *   **特点**: 影棚人像标准，细腻平滑。
+*   **`FLog2C_to_ACROS_VLog.cube`**
+    *   **风格**: Acros。
+    *   **特点**: 质感极佳的黑白模式，有着独特的中灰影调。
+
+### 🔧 基础转换 (Technical)
+*   **`FLog2C_to_FLog2C-709_VLog.cube`**
+    *   **风格**: Rec.709 Tech Transform。
+    *   **特点**: 纯技术转换，将 F-Log2C 还原为标准 Rec.709，不带任何胶片风格。
+*   **`FLog2C_to_WDR_VLog.cube`**
+    *   **风格**: Wide Dynamic Range (宽动态范围)。
+    *   **特点**: 富士特色的视频直出曲线。比标准 Rec.709 保留更多高光和阴影细节，反差适中，色彩自然，适合快速出片或直播。
+
+---
+
+### 🔴 Leica (L-Log Core)
+*基于 Leica SL/Q 系列色彩科学，提供极具辨识度的“德味”厚重感。*
+
+*   **`L-Log_to_Classic_VLog.cube`**
+    *   **风格**: Leica Classic (经典)。
+    *   **特点**: 标志性的“徕卡味”。高微反差 (Micro-contrast)，深沉的暗部，锐利且略带冷调的阴影，暖调的高光。非常适合黑白摄影预视或强调质感的纪实摄影。
+*   **`L-Log_to_Natural_VLog.cube`**
+    *   **风格**: Leica Natural (自然)。
+    *   **特点**: 相比 Classic 更加现代和中性。保留了徕卡的高光滚降特性，但暗部细节更多，对比度更温和，色彩过渡非常平滑“高级”，适合时尚、人像或日常记录。
 
 ---
 
@@ -69,14 +111,3 @@
      0.00071857f,  0.98909229f,  0.01132693f,
      0.00959302f,  0.00494250f,  0.98650739f
 }
-```
-
-详细的 DCTL 代码请查看 DCTL 文件夹。
-
----
-
-## ⚠️ 注意事项 (Disclaimer)
-1. **物理限制**：虽然我们在数学上对齐了色彩空间，但不同传感器的 CFA (色彩滤镜阵列) 光谱响应特性不同。所谓的“同色异谱”现象意味着在某些极端光源下（如霓虹灯），松下的表现可能仍与原机有细微差异。
-2. **曝光策略**：由于转换后的曲线特性（特别是 F-Log2C），建议拍摄时向右曝光 (ETTR) 0.5~1 档，以获得更干净的暗部。
-3. **非官方**：本项目与 Panasonic, Fujifilm, Leica 无官方关联。
-
