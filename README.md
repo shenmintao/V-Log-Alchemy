@@ -123,7 +123,7 @@ For Panasonic models that support LUT loading, such as S1R II, S5M2, S1H.
 For maximum image quality (to avoid precision loss from LUTs), using the DCTL script in DaVinci Resolve is recommended. (Please note: DCTL is a feature exclusive to the paid DaVinci Resolve Studio version).
 
 **Node Structure:**
-1.  **CST Node**: Panasonic V-Gamut/V-Log -> ACES AP0 / Linear (No Tone Mapping).
+1.  **CST Node**: Panasonic V-Gamut/V-Log -> ACES AP0 / Linear. **Important**: In the CST node settings, disable **Tone Mapping** and **White Point Adaptation**.
 2.  **DCTL Node**: Load the `ACES_to_FLog2C_Inverse.dctl` script provided in this project.
 3.  **LUT Node**: Apply the official Fujifilm F-Log2C film simulation LUT.
 
@@ -137,10 +137,10 @@ The core of this project is a precise inverse matrix. Taking **ACES AP0 to F-Log
 // ACES AP0 (Linear) to F-Gamut (Linear) Inverse Matrix
 // Calculated based on Fujifilm F-Log2C official IDT v1.00
 {
-     1.18953639f, -0.05277977f, -0.13553403f,
-     0.00071857f,  0.98909229f,  0.01132693f,
-     0.00959302f,  0.00494250f,  0.98650739f
-}
+     1.18805632080277f, -0.0526707998586238f, -0.135385520944148f,
+     0.000717966415014435f, 0.987967895093181f, 0.0113141384918043f,
+     0.0095814146658757f, 0.00504068380666559f, 0.985377901527459f,
+};
 ```
 
 For detailed DCTL code, please see the `DCTL` folder.

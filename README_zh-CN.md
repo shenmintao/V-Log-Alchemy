@@ -123,7 +123,7 @@
 为了获得最高画质（避免 LUT 带来的精度损失），建议在达芬奇中使用 DCTL 脚本。(请注意：DCTL 功能为达芬奇 Studio 付费版独占功能)。
 
 **节点结构：**
-1.  **CST Node**: Panasonic V-Gamut/V-Log -> ACES AP0 / Linear (No Tone Mapping).
+1.  **CST Node**: Panasonic V-Gamut/V-Log -> ACES AP0 / Linear。**重要提示**：请关闭此节点的 **Tone Mapping (色调映射)** 和 **White Point Adaptation (白点自适应)**。
 2.  **DCTL Node**: 加载本项目提供的 `ACES_to_FLog2C_Inverse.dctl`。
 3.  **LUT Node**: 加载富士官方 F-Log2C 胶片模拟 LUT。
 
@@ -137,10 +137,10 @@
 // ACES AP0 (Linear) to F-Gamut (Linear) Inverse Matrix
 // Calculated based on Fujifilm F-Log2C official IDT v1.00
 {
-     1.18953639f, -0.05277977f, -0.13553403f,
-     0.00071857f,  0.98909229f,  0.01132693f,
-     0.00959302f,  0.00494250f,  0.98650739f
-}
+     1.18805632080277f, -0.0526707998586238f, -0.135385520944148f,
+     0.000717966415014435f, 0.987967895093181f, 0.0113141384918043f,
+     0.0095814146658757f, 0.00504068380666559f, 0.985377901527459f,
+};
 ```
 
 详细的 DCTL 代码请查看 `DCTL` 文件夹。
