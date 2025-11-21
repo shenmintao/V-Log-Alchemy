@@ -132,6 +132,18 @@ The LUTs in this repository are designed exclusively for **Panasonic V-Log / V-G
 
 ---
 
+## 📸 Sample Images
+
+Here are some sample images showcasing the LUT effects:
+
+### Fujifilm Classic Neg. LUT
+![FujiFilm Classic Neg. LUT Sample](./Samples/FujiFilm_Classic_Neg._Sample.jpg)
+
+### Leica Classic LUT
+![Leica Classic LUT Sample](./Samples/Leica_Classic_Sample.jpg)
+
+---
+
 ## 🛠️ Usage
 
 ### 1. The Easy Way (For Camera / Real Time LUTs)

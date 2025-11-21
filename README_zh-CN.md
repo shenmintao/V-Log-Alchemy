@@ -132,6 +132,18 @@
 
 ---
 
+## 📸 样片展示 (Sample Images)
+
+以下是一些展示 LUT 效果的样片图片：
+
+### 富士 Classic Neg. LUT
+![FujiFilm Classic Neg. LUT Sample](./Samples/FujiFilm_Classic_Neg._Sample.jpg)
+
+### 徕卡 Classic LUT
+![Leica Classic LUT Sample](./Samples/Leica_Classic_Sample.jpg)
+
+---
+
 ## 🛠️ 使用方法 (Usage)
 
 ### 1. 简易方式 (相机 / 实时 LUT)
