@@ -81,6 +81,27 @@
 
 ---
 
+### 📷 Nikon (N-Log Core)
+*基于尼康的 N-Log 色彩科学，为色彩分级提供了一个通用的起点。*
+
+*   **`N-Log_BT2020_to_REC709_BT1886_VLog.cube`**
+    *   **风格**: 尼康官方 Rec.709。
+    *   **特点**: 尼康从 N-Log 到 Rec.709 的标准转换，提供中性、准确的色彩表现。
+*   **`RED_Achromic_Rec2020_N-Log_to_Rec709_VLog.cube`**
+    *   **风格**: RED Achromic。
+    *   **特点**: 以低对比度的单色外观转换素材。非常适合营造细节丰富的柔和艺术感。
+*   **`RED_FilmBias_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **风格**: RED Film Bias。
+    *   **特点**: 增添了传统胶片的金色温暖和色调。是打造有机、电影感并能增强肤色的起点。
+*   **`RED_FilmBiasBleachBypass_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **风格**: RED Film Bias Bleach Bypass。
+    *   **特点**: 模拟跳漂白工艺的高对比度和去饱和色彩。提供一种戏剧性的、褪色的外观，赋予画面一种严酷的现实主义。
+*   **`RED_FilmBiasOffset_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **风格**: RED Film Bias Offset。
+    *   **特点**: 通过独特的分割色调偏移和微妙的温暖感，再现复古胶片外观。非常适合艺术场景和风景。
+
+---
+
 ### 🎬 ARRI (LogC Core)
 *基于 ARRI Alexa 电影机的色彩科学，提供行业标准的电影感。*
 

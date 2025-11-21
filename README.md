@@ -81,6 +81,27 @@ The LUTs in this repository are designed exclusively for **Panasonic V-Log / V-G
 
 ---
 
+### 📷 Nikon (N-Log Core)
+*Based on Nikon's N-Log color science, providing a versatile starting point for color grading.*
+
+*   **`N-Log_BT2020_to_REC709_BT1886_VLog.cube`**
+    *   **Style**: Nikon Official Rec.709.
+    *   **Features**: Nikon's standard conversion from N-Log to Rec.709, offering a neutral and accurate color representation.
+*   **`RED_Achromic_Rec2020_N-Log_to_Rec709_VLog.cube`**
+    *   **Style**: RED Achromic.
+    *   **Features**: Transforms footage with a low-contrast monochrome look. Ideal for creating a soft, artistic feel that’s rich with detail.
+*   **`RED_FilmBias_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **Style**: RED Film Bias.
+    *   **Features**: Adds the golden warmth and hues of traditional film. A starting point for an organic, cinematic feel that enhances skin tones.
+*   **`RED_FilmBiasBleachBypass_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **Style**: RED Film Bias Bleach Bypass.
+    *   **Features**: Emulates the high contrast and desaturated colors of bleach bypass film processing. Provides a dramatic, faded look that imparts a harsh realism.
+*   **`RED_FilmBiasOffset_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
+    *   **Style**: RED Film Bias Offset.
+    *   **Features**: Recreates a vintage film look with unique split-tone offsets and subtle warmth. Ideal for artistic scenes and landscapes.
+
+---
+
 ### 🎬 ARRI (LogC Core)
 *Based on the color science of the ARRI Alexa, providing the industry-standard cinematic feel.*
 
